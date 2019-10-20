@@ -22,4 +22,5 @@
 * 9.24 第一批 1.5.1, 1.5.2, 1.5.3, 1.5.8 
 * 10.14 第二批 1.4.2 1.4.4 1.4.5 1.4.6 1.4.15 1.4.4答案：https://github.com/reneargento/algorithms-sedgewick-wayne/blob/master/src/chapter1/section4/Exercise4.txt
 * 10.18 第一批 2.2.2  2.2.3  2.2.4  2.2.5  2.2.8
+* 10.22 第二批 2.3.1 2.3.2 2.3.3 2.3.4 2.3.5
 

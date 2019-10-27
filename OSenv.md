@@ -13,7 +13,7 @@
 这个版本的编译bochs，可以把bochs放在/src/misc下，通过修改和执行其中的bochs脚本（注意版本号请严格对应，因为存在某些patch连接，很容易翻车），自动make
 修改方法是给路径赋值，类似这样
 
-#! /bin/sh -e
+`#! /bin/sh -e
 
 SRCDIR=/home/enimga/Desktop/Enigma_OS/pintos-anon/src/misc
 PINTOSDIR=/home/enimga/Desktop/Enigma_OS/pintos-anon
@@ -24,7 +24,7 @@ if test -z "$SRCDIR" || test -z "$PINTOSDIR" || test -z "$DSTDIR"; then
     echo "    and <pintosdir> is the root of the pintos source tree"
     echo "    and <dstdir> is the installation prefix (e.g. /usr/local)"
     exit 1
-fi
+fi`
 
 然后bash里面./bochs-2.6.2-build.sh
   
@@ -33,7 +33,7 @@ fi
 
 这个库不是给Linux用的，所以删掉没关系，只需要注释掉，同时把squish-pty.c中286行注释写着System的if语句注释即可
 
-  /* System V implementations need STREAMS configuration for the
+`  /* System V implementations need STREAMS configuration for the
      slave. */
   //if (isastream (slave))
     //{
@@ -41,5 +41,5 @@ fi
           //|| ioctl (slave, I_PUSH, "ldterm") < 0)
         //fail_io ("ioctl");
     //}
-
+`
 顺便说一下环境变量不需要重复修改，修改的话也只需要source即可，注销没必要
